@@ -1,0 +1,143 @@
+/* Footer section */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-color-first);
+  &__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.logo__footer {
+  color: var(--main-color);
+}
+
+// Footer address
+
+.address-list {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  &__item:not(:last-child){
+    margin-bottom: 9px;
+  }
+}
+.address-list__link {
+  color: var(--text-color-secondary);
+  transition: color var(--anim-time) var(--anim-time-line);
+  &--main-color {
+    color: var(--main-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* Footer connect */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.connect {
+  margin-left: 70px;
+}
+
+.connect-title,
+.sign-in-title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.connect-list {
+  display: flex;
+  justify-content: center;
+  &__item + &__item {
+    margin-left: 10px;
+  }
+  &__icon{
+    fill: var(--main-color);
+  }
+}
+
+.connect-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-icon-bg);
+
+  transition: background-color var(--anim-time) var(--anim-time-line);
+
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color);
+  }
+}
+
+
+/* Footer sign-in section */
+
+.sign-in {
+  margin-left: auto;
+}
+
+.sign-in-form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sign-in-field {
+  width: 358px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid var(--sign-in-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  /* font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+
+  &::placeholder {
+      /* font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400; */
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: var(--text-color-secondary);
+    }
+}
+
+.sign-in-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+      margin-left: 10px;
+      fill: var(--main-color);
+    }
+}

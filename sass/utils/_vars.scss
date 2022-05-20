@@ -1,0 +1,57 @@
+/* Палитра Цветов
+      Логотип
+Цвет логотипа: синий #2196F3;
+Цвет логотипа: черный #000000;
+Цвет логотипа: белый #FFFFFF;
+      Текст
+Цвет заголовков: темный #212121
+Цвет параграфов, контакты на белом фоне: серый #757575
+Контакты на сером фоне: rgba(255, 255, 255, 0.6)
+      Фон
+Основной цвет фона белый #FFFFFF
+Основной цвет фона темный #2F303A
+Вторичный цвет фона светло-серый #F5F4FA
+      Кнопки
+Основной цвет кнопок синий #2196F3
+Цвет :hover на синих кнопках синий #188CE8
+Основной цвет кнопок серый #F5F4FA
+Цвет :hover на серых кнопках синий #2196F3
+Цвет бордера нижний у хедера #ECECEC
+Цвет бордера карточек портфолио #EEEEEE
+Team social icon color #AFB1B8
+Footer connect icons color rgba(255, 255, 255, 0.1);
+
+input-border-color
+*/
+/* Fonts
+Logo Raleway 700; 
+h1 Roboto 900
+h2 Roboto 700
+li,h3 Roboto 500
+p Roboto 400 */
+
+:root {
+    --main-color: #ffffff;
+    --header-logo-color: #000000;
+    --accent-color: #2196f3;
+    --title-color: #212121;
+    --text-color: #757575;
+    --text-color-secondary: rgba(255, 255, 255, 0.6);
+    --bg-color-first: #2f303a;
+    --bg-color-second: #f5f4fa;
+    --btn-color-hover: #188ce8;
+    --header-border: #ececec;
+    --portfolio-cars-border: #eeeeee;
+    --social-icon-fill: #afb1b8;
+    --footer-icon-bg: rgba(255, 255, 255, 0.1);
+    --services-overlay-bg: rgba(47, 48, 58, 0.8);
+    --backdrop-color: rgba(47, 48, 58, 0.8);
+    --close-btn-border: rgba(0, 0, 0, 0.1);
+    --portfolio-overlay-bg: rgba(33, 150, 243, 0.9);
+    --input-border-color: rgba(33, 33, 33, 0.2);
+    --placeholder-color: rgba(117, 117, 117, 0.5);
+    --sign-in-border: rgba(255, 255, 255, 0.3);
+
+    --anim-time: 250ms;
+    --anim-time-line: cubic-bezier(0.4, 0, 0.2, 1);
+}

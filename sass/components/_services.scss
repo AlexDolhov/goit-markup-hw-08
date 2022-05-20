@@ -1,0 +1,49 @@
+/* Services section */
+
+.services {
+    padding-bottom: 94px;
+}
+
+.services-list {    
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 70px;
+        width: 100%;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-color);
+    
+        background-color: var(--services-overlay-bg);
+    }
+ }
+
+.services-title,
+.team-title {
+    margin-bottom: 50px;
+
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
