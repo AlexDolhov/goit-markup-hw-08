@@ -3,12 +3,16 @@
 .header {
   border-bottom: 1px solid var(--header-border);
   &__logo {
-    padding: 24px 0;
+    // padding: 24px 0;
+    padding: 10px 0;
   }
 }
 
 .main-nav {
   display: flex;
+  //////
+  justify-content: space-between;
+  //////
   align-items: center;
 }
 
@@ -26,8 +30,30 @@
   }
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-button__close{
+  display: none;
+}
+.menu-button.is-open .menu-button__close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__menu {
+  display: none;
+}
+
 .navigation {
   margin-left: 93px;
+
+  ////////////////
+  display: none;
 }
 
 .site-nav {
@@ -72,7 +98,10 @@
 /* Header contacts section */
 
 .header-contacts {
-  display: flex;
+
+  ///////
+  // display: flex;
+  display: none;
   margin-left: auto;
 
   &__item + &__item {

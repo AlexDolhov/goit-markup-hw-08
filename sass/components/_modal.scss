@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
 
+
   background: var(--backdrop-color);
 
   opacity: 1;
@@ -29,7 +30,8 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  width: 95vw;
+  
   min-height: 581px;
 
   padding: 40px;
@@ -41,6 +43,14 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-time) var(--anim-time-line);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .close-btn {
@@ -84,11 +94,16 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1,5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--title-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1,15;
+  }
 }
 
 .field {
@@ -212,6 +227,16 @@
   
     transition: background-color 250ms linear, border 250ms linear;
     fill: transparent;
+  }
+
+  &__text{
+    font-size: 12px;
+    line-height: 1.17;    
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+      font-size: inherit;
+      line-height: 1.7;
+    }
   }
   
   &__link {

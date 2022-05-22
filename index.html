@@ -23,6 +23,12 @@
       <a class="logo header__logo link" href="./index.html">
         Web<span class="logo__header">Studio</span>
       </a>
+      <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="menu-button__close" href="./img/sprite.svg#icon-close"></use>
+          <use class="menu-button__menu" href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
       <nav class="navigation">
         <ul class="site-nav list">
           <li class="site-nav__item item">
@@ -58,18 +64,17 @@
   <!-- Main content -->
   <main>
     <!-- Hero section -->
-    <section class="hero">
-      <div class="container">
+    <!-- <section class="hero">
+      <div class="container hero__container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero__button btn" type="button" data-modal-open>
           Заказать услугу
         </button>
       </div>
-    </section>
+    </section> -->
     <!-- Advantages section -->
-    <section class="advantages section">
+    <!-- <section class="advantages section">
       <div class="container">
-        <!-- скрытый заголовок -->
         <h2 hidden>Сильные качества компании</h2>
         <ul class="advantages-list list">
           <li class="advantages-list__item item">
@@ -122,9 +127,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- Services section -->
-    <section class="services">
+    <!-- <section class="services">
       <div class="container">
         <h2 class="services-title">Чем мы занимаемся</h2>
         <ul class="services-list list">
@@ -142,18 +147,18 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- Team section -->
-    <section class="team section">
+    <!-- <section class="team section">
       <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-list__item item">
             <img class="team-list__img" src="img/ihor.jpg" alt="Фото Игоря" width="270" />
             <h3 class="team-list__worker">Игорь Демьяненко</h3>
-            <p class="team-list__text" lang="en">Product Designer</p>
-            <!-- Team social icons -->
-            <ul class="social list">
+            <p class="team-list__text" lang="en">Product Designer</p> -->
+    <!-- Team social icons -->
+    <!-- <ul class="social list">
               <li class="social__item">
                 <a class="social__link link" href="https://www.instagram.com">
                   <svg class="social__icon" width="20" height="20">
@@ -291,9 +296,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- Clients section -->
-    <section class="clients section">
+    <!-- <section class="clients section">
       <div class="container">
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-list list">
@@ -341,12 +346,12 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- Footer section -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container footer-container">
-      <div>
+      <div class="footer-contacts">
         <a class="logo footer__logo link" href="./index.html">Web<span class="logo__footer">Studio</span>
         </a>
         <address class="footer-address">
@@ -364,9 +369,9 @@
             </li>
           </ul>
         </address>
-      </div>
-      <!-- Footer connect -->
-      <div class="connect">
+      </div> -->
+  <!-- Footer connect -->
+  <!-- <div class="connect">
         <strong class="connect-title">Присоединяйтесь</strong>
         <ul class="connect-list list">
           <li class="connect-list__item item">
@@ -398,9 +403,9 @@
             </a>
           </li>
         </ul>
-      </div>
-      <!-- Footer sign-in section -->
-      <div class="sign-in">
+      </div> -->
+  <!-- Footer sign-in section -->
+  <!-- <div class="sign-in">
         <strong class="sign-in-title">Подпишитесь на рассылку</strong>
         <form class="sign-in-form" autocomplete="off">
           <input class="sign-in-field" type="email" name="mail" placeholder="E-mail">
@@ -412,7 +417,7 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <!-- Modal window -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -461,7 +466,8 @@
           <svg class="checkbox__icon" width="16" height="15">
             <use href="./img/sprite.svg#icon-check"></use>
           </svg>
-          <span>Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия договора</a></span>
+          <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия
+              договора</a></span>
         </label>
 
 
@@ -472,6 +478,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
