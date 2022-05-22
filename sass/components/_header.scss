@@ -2,9 +2,16 @@
 
 .header {
   border-bottom: 1px solid var(--header-border);
-  &__logo {
-    // padding: 24px 0;
-    padding: 10px 0;
+  &__logo {   
+    padding: 16px 0;
+    
+    @media (min-width: 768px) {
+      padding: 26px 0;
+    }
+      
+    @media (min-width: 768px) {
+      padding: 24px 0;
+    }
   }
 }
 
@@ -14,6 +21,10 @@
   justify-content: space-between;
   //////
   align-items: center;
+
+  @media (min-width: 768px) {
+    justify-content: inherit;
+  }
 }
 
 .logo {
@@ -21,39 +32,33 @@
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   &__header {
     color: var(--header-logo-color);
   }
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-}
-
-.menu-button__close{
-  display: none;
-}
-.menu-button.is-open .menu-button__close {
-  display: block;
-}
-
-.menu-button.is-open .menu-button__menu {
-  display: none;
+    @media (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+  
 }
 
 .navigation {
-  margin-left: 93px;
 
-  ////////////////
   display: none;
+
+  margin-left: 88px;
+
+  @media (min-width: 768px) {
+      display: inherit;
+    }
+
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav {
@@ -99,35 +104,66 @@
 
 .header-contacts {
 
-  ///////
-  // display: flex;
   display: none;
   margin-left: auto;
-
-  &__item + &__item {
-    margin-left: 50px;
-  }
 
   &__icon {
     margin-right: 10px;
     fill: currentColor;
   }
+
+  &__item:first-child {
+    margin-bottom: 10px;
+    @media (min-width: 1200px) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
+
+.icon-mail {
+  @media (max-width: 1200px) {
+      width: 14px;
+      height: 10px;
+    }
+}
+
+.icon-phone {
+  @media (max-width: 1200px) {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .header-contacts__link {
   display: flex;
   align-items: center;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--text-color);
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
+
   letter-spacing: 0.02em;
   transition: color var(--anim-time) var(--anim-time-line);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: inherit;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;    
   }
 }

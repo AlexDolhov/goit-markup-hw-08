@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
 
+  overflow-y: scroll;
 
   background: var(--backdrop-color);
 
@@ -31,8 +32,6 @@
   left: 50%;
 
   width: 95vw;
-  
-  min-height: 581px;
 
   padding: 40px;
 
