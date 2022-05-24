@@ -13,29 +13,45 @@
 
 .footer-container {
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.contacts-wrap {
+  
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
+    padding-left: calc(76px - 15px);  
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    padding-left: 0;
   }
 }
 
 .footer-contacts {
 
-  text-align: center;
-
   margin-bottom: 60px;
 
+  text-align: center;
+
   @media screen and (min-width: 768px) {
-    margin-left: calc(76px - 15px);
-    margin-right: 165px;
+
+    margin-bottom: 0;
+    // margin-left: calc(76px - 15px);
   }
 
   @media screen and (min-width: 1200px) {
     text-align: inherit;
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 70px;
   }
 } 
 
@@ -77,10 +93,12 @@
 
 .connect {
 
-  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+      margin-left: 165px;
+    }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
+    margin-left: 70px;
   }
  
 }
@@ -140,8 +158,6 @@
 .sign-in {
  
   @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -152,6 +168,7 @@
 }
 
 .sign-in-form {
+ 
   // display: inline-block;
   
   text-align: center;
@@ -167,6 +184,8 @@
 .sign-in-field {
 
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   width: 100%;
 
@@ -189,6 +208,19 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  
+  @media screen and (min-width: 768px) {
+
+    width: 450px;
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
   &::placeholder {
       /* font-family: "Roboto";
@@ -198,19 +230,6 @@
       line-height: 1.25;
       letter-spacing: 0.03em;
       color: var(--text-color-secondary);
-    }
-
-    @media screen and (min-width: 768px) {
-
-      width: 450px;
-   
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: inline-block;
-      width: 358px;
-      margin-right: 12px;
-      margin-bottom: 0;
     }
 }
 

@@ -5,11 +5,11 @@
   &__logo {   
     padding: 16px 0;
     
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       padding: 26px 0;
     }
       
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       padding: 24px 0;
     }
   }
@@ -22,7 +22,7 @@
   //////
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     justify-content: inherit;
   }
 }
@@ -39,7 +39,7 @@
   &__header {
     color: var(--header-logo-color);
   }
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       font-size: 26px;
       line-height: 1.2;
     }
@@ -52,11 +52,11 @@
 
   margin-left: 88px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
       display: inherit;
     }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -114,30 +114,30 @@
 
   &__item:first-child {
     margin-bottom: 10px;
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 50px;
       margin-bottom: 0;
     }
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .icon-mail {
-  @media (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
       width: 14px;
       height: 10px;
     }
 }
 
 .icon-phone {
-  @media (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     width: 10px;
     height: 14px;
   }
@@ -160,7 +160,25 @@
     color: var(--accent-color);
   }
 
-  @media (min-width: 1200px) {
+  &--padding-top {
+    @media screen and (min-width: 768px){
+      padding-top: 20px;      
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 0;      
+    }
+  }
+
+  &--padding-bottom {
+    @media screen and (min-width: 768px){
+      padding-bottom: 20px;     
+    }
+    @media screen and (min-width: 1200px){
+      padding-bottom: 0;     
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: inherit;
     line-height: 1.14;
     padding-top: 32px;

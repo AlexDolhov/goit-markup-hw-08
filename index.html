@@ -42,7 +42,7 @@
       <!-- Header contacts section -->
       <ul class="header-contacts list">
         <li class="header-contacts__item item">
-          <a class="header-contacts__link link" href="mailto:info@devstudio.com">
+          <a class="header-contacts__link header-contacts__link--padding-top link" href="mailto:info@devstudio.com">
             <svg class="header-contacts__icon icon-mail" width="16" height="12">
               <use href="./img/sprite.svg#icon-mail"></use>
             </svg>
@@ -50,7 +50,7 @@
           </a>
         </li>
         <li class="header-contacts__item item">
-          <a class="header-contacts__link link" href="tel:+380961111111">
+          <a class="header-contacts__link header-contacts__link--padding-bottom link" href="tel:+380961111111">
             <svg class="header-contacts__icon icon-phone" width="10" height="16">
               <use href="./img/sprite.svg#icon-smartphone"></use>
             </svg>
@@ -95,16 +95,16 @@
         <!-- Mobile menu soc-->
         <ul class="menu-soc list">
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://www.instagram.com">Instagram</a>
+            <a class="menu-soc__link link" href="https://www.instagram.com">Instagram</a>
           </li>
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://twitter.com">Twiter</a>
+            <a class="menu-soc__link link" href="https://twitter.com">Twiter</a>
           </li>
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://www.facebook.com">Facebook</a>
+            <a class="menu-soc__link link" href="https://www.facebook.com">Facebook</a>
           </li>
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://www.linkedin.com">Linkedin</a>
+            <a class="menu-soc__link link" href="https://www.linkedin.com">Linkedin</a>
           </li>
         </ul>
       </div>
@@ -407,58 +407,60 @@
   <!-- Footer section -->
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-contacts">
-        <a class="logo footer__logo link" href="./index.html">Web<span class="logo__footer">Studio</span>
-        </a>
-        <address class="footer-address">
-          <ul class="address-list list">
-            <li class="address-list__item item">
-              <a class="address-list__link address-list__link--main-color link" target="_blank"
-                href="https://goo.gl/maps/aLoBdVxBaDCiLa739">г. Киев,
-                пр-т Леси Украинки, 26</a>
+      <div class="contacts-wrap">
+        <div class="footer-contacts">
+          <a class="logo footer__logo link" href="./index.html">Web<span class="logo__footer">Studio</span>
+          </a>
+          <address class="footer-address">
+            <ul class="address-list list">
+              <li class="address-list__item item">
+                <a class="address-list__link address-list__link--main-color link" target="_blank"
+                  href="https://goo.gl/maps/aLoBdVxBaDCiLa739">г. Киев,
+                  пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="address-list__item item">
+                <a class="address-list__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address-list__item item">
+                <a class="address-list__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer connect -->
+        <div class="connect">
+          <strong class="connect-title">Присоединяйтесь</strong>
+          <ul class="connect-list list">
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://www.instagram.com">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list__item item">
-              <a class="address-list__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://twitter.com">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list__item item">
-              <a class="address-list__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://www.facebook.com">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://www.linkedin.com/">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <!-- Footer connect -->
-      <div class="connect">
-        <strong class="connect-title">Присоединяйтесь</strong>
-        <ul class="connect-list list">
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://www.instagram.com">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://twitter.com">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://www.facebook.com">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://www.linkedin.com/">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <!-- Footer sign-in section -->
       <div class="sign-in">
@@ -516,7 +518,6 @@
             placeholder="Введите текст"></textarea>
         </div>
 
-
         <label class="checkbox">
           <input class="checkbox__input" type="checkbox" name="agreement" value="cheсked">
           <svg class="checkbox__icon" width="16" height="15">
@@ -525,8 +526,6 @@
           <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия
               договора</a></span>
         </label>
-
-
 
         <button class="modal-submit btn" type="submit">Отправить</button>
 

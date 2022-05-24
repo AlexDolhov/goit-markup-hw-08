@@ -12,6 +12,9 @@
 
     &__item {
 
+        display: flex;
+        
+
         margin-bottom: 30px;
         
             @media screen and (min-width: 768px) {
@@ -27,7 +30,8 @@
 }
 
 .product-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--anim-time) var(--anim-time-line);
 
     &__thumb {
@@ -55,9 +59,11 @@
     
         display: flex;
         align-items: center;
-    
-        padding-left: 24px;
-        padding-right: 24px;
+
+        padding: 24px;
+
+        // padding-left: 24px;
+        // padding-right: 24px;
     
         font-size: 18px;
         line-height: 1.56;
@@ -68,6 +74,7 @@
     
         transform: translateY(101%);
         transition: transform var(--anim-time) var(--anim-time-line);
+        overflow-y: scroll;
     }
 
     &:hover .product-card__overlay,
@@ -82,6 +89,9 @@
     }
 
     &__info {
+        
+        flex-grow: 1;
+
         padding: 20px 24px;
     
         border-left: 1px solid var(--portfolio-cars-border);

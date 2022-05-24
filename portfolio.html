@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -96,16 +95,16 @@
         <!-- Mobile menu soc-->
         <ul class="menu-soc list">
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://www.instagram.com">Instagram</a>
+            <a class="menu-soc__link link" href="https://www.instagram.com">Instagram</a>
           </li>
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://twitter.com">Twiter</a>
+            <a class="menu-soc__link link" href="https://twitter.com">Twiter</a>
           </li>
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://www.facebook.com">Facebook</a>
+            <a class="menu-soc__link link" href="https://www.facebook.com">Facebook</a>
           </li>
           <li class="menu-soc__item item">
-            <a class="menu-soc__list link" href="https://www.linkedin.com">Linkedin</a>
+            <a class="menu-soc__link link" href="https://www.linkedin.com">Linkedin</a>
           </li>
         </ul>
       </div>
@@ -150,8 +149,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/technocrack.jpg 1x, img/technocrack-2x.jpg 2x"
-                  src="img/technocrack.jpg" alt="Ноутбук" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/technocrack.jpg 1x,
+                    ./img/technocrack-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/technocrack-tab.jpg 1x,
+                    ./img/technocrack-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/technocrack-mob.jpg 1x,
+                    ./img/technocrack-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/technocrack.jpg" alt="Ноутбук" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -168,8 +177,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/basketbolists.jpg 1x, img/basketbolists-2x.jpg 2x"
-                  src="img/basketbolists.jpg" alt="Баскетболисты" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/basketbolists.jpg 1x,
+                    ./img/basketbolists-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/basketbolists-tab.jpg 1x,
+                    ./img/basketbolists-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/basketbolists-mob.jpg 1x,
+                    ./img/basketbolists-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/basketbolists.jpg" alt="Баскетболисты" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -188,8 +207,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/restaurant-seafood.jpg 1x, img/restaurant-seafood-2x.jpg 2x"
-                  src="img/restaurant-seafood.jpg" alt="Логотип ресторана" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/seafood.jpg 1x,
+                    ./img/seafood-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/seafood-tab.jpg 1x,
+                    ./img/seafood-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/seafood-mob.jpg 1x,
+                    ./img/seafood-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/seafood.jpg" alt="Логотип ресторана" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -206,8 +235,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/headphones.jpg 1x, img/headphones-2x.jpg 2x"
-                  src="img/headphones.jpg" alt="Наушники" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/headphones.jpg 1x,
+                    ./img/headphones-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/headphones-tab.jpg 1x,
+                    ./img/headphones-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/headphones-mob.jpg 1x,
+                    ./img/headphones-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/headphones.jpg" alt="Наушники" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -224,8 +263,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/boxes.jpg 1x, img/boxes-2x.jpg 2x" src="img/boxes.jpg"
-                  alt="Коробки" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/boxes.jpg 1x,
+                    ./img/boxes-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/boxes-tab.jpg 1x,
+                    ./img/boxes-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/boxes-mob.jpg 1x,
+                    ./img/boxes-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/boxes.jpg" alt="Коробки" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -242,8 +291,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/monitor.jpg 1x, img/monitor-2x.jpg 2x" src="img/monitor.jpg"
-                  alt="Монитор" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/monitor.jpg 1x,
+                    ./img/monitor-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/monitor-tab.jpg 1x,
+                    ./img/monitor-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/monitor-mob.jpg 1x,
+                    ./img/monitor-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/monitor.jpg" alt="Монитор" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -260,8 +319,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/book.jpg 1x, img/book-2x.jpg 2x" src="img/book.jpg"
-                  alt="Книга" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/book.jpg 1x,
+                    ./img/book-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/book-tab.jpg 1x,
+                    ./img/book-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/book-mob.jpg 1x,
+                    ./img/book-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/book.jpg" alt="Книга" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -280,8 +349,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/tag.jpg 1x, img/tag-2x.jpg 2x" src="img/tag.jpg" alt="Лейба"
-                  width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/tag.jpg 1x,
+                    ./img/tag-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/tag-tab.jpg 1x,
+                    ./img/tag-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/tag-mob.jpg 1x,
+                    ./img/tag-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/tag.jpg" alt="Лейба" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -298,8 +377,18 @@
           <li class="product-set__item item">
             <a href="" class="product-card link">
               <div class="product-card__thumb">
-                <img class="product-card__img" srcset="img/businessman.jpg 1x, img/businessman-2x.jpg 2x"
-                  src="img/businessman.jpg" alt="Бизнесмен" width="370" />
+                <picture>
+                  <source srcset="
+                    ./img/businessman.jpg 1x,
+                    ./img/businessman-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./img/businessman-tab.jpg 1x,
+                    ./img/businessman-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                    ./img/businessman-mob.jpg 1x,
+                    ./img/businessman-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                  <img class="product-card__img" src="img/businessman.jpg" alt="Бизнесмен" />
+                </picture>
                 <p class="product-card__overlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -320,58 +409,60 @@
   <!-- Footer section -->
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-contacts">
-        <a class="logo footer__logo link" href="./index.html">Web<span class="logo__footer">Studio</span>
-        </a>
-        <address class="footer-address">
-          <ul class="address-list list">
-            <li class="address-list__item item">
-              <a class="address-list__link address-list__link--main-color link" target="_blank"
-                href="https://goo.gl/maps/aLoBdVxBaDCiLa739">г. Киев,
-                пр-т Леси Украинки, 26</a>
+      <div class="contacts-wrap">
+        <div class="footer-contacts">
+          <a class="logo footer__logo link" href="./index.html">Web<span class="logo__footer">Studio</span>
+          </a>
+          <address class="footer-address">
+            <ul class="address-list list">
+              <li class="address-list__item item">
+                <a class="address-list__link address-list__link--main-color link" target="_blank"
+                  href="https://goo.gl/maps/aLoBdVxBaDCiLa739">г. Киев,
+                  пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="address-list__item item">
+                <a class="address-list__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address-list__item item">
+                <a class="address-list__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer connect -->
+        <div class="connect">
+          <strong class="connect-title">Присоединяйтесь</strong>
+          <ul class="connect-list list">
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://www.instagram.com">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list__item item">
-              <a class="address-list__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://twitter.com">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list__item item">
-              <a class="address-list__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://www.facebook.com">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-list__item item">
+              <a class="connect-list__link link" href="https://www.linkedin.com/">
+                <svg class="connect-list__icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <!-- Footer connect -->
-      <div class="connect">
-        <strong class="connect-title">Присоединяйтесь</strong>
-        <ul class="connect-list list">
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://www.instagram.com">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://twitter.com">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://www.facebook.com">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="connect-list__item item">
-            <a class="connect-list__link link" href="https://www.linkedin.com/">
-              <svg class="connect-list__icon" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <!-- Footer sign-in section -->
       <div class="sign-in">
